@@ -12,3 +12,9 @@ CREATE TABLE Admin_Lokasi (
     FOREIGN KEY (id_lokasi) REFERENCES Lokasi_Kampus (id_lokasi)
 );
 
+CREATE TABLE mahasiswa (
+  nim VARCHAR(15) NOT NULL,
+  nama_mahasiswa VARCHAR(100)
+  kelas(20) NULL
+  CONSTRAINT pk_mahasiswa PRIMARY KEY (nim)
+) ENGINE=InnoDB;
